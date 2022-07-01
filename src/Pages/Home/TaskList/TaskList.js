@@ -9,6 +9,8 @@ const TaskList = () => {
       .then((res) => res.json())
       .then((data) => setTodo(data));
   }, []);
+
+  const newTodo = todo.filter(todo => todo.completeness!=='complete');
   return (
     <div className="container my-10 ml-auto mr-auto p-16">
       <h2 className="text-2xl font-bold text-center">To Do list</h2>
@@ -24,7 +26,7 @@ const TaskList = () => {
           </thead>
           <tbody>
             {
-                todo.map(todo => <List key={todo._id} list ={todo}></List>)
+                newTodo.map(todo => <List key={todo._id} list ={todo}></List>)
             }
           </tbody>
         </table>
