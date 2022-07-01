@@ -42,10 +42,10 @@ const AddTask = () =>
   return (
     <div className="container p-16 ">
     <article className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-    <div class="card w-96 p-10 shadow-xl mx-auto">
-        <h2>Add your New Task</h2>
+    <div class="card w-96 p-10 shadow-xl ">
+        <h2 className="text-xl font-bold text-center">Add your New Task</h2>
         
-        <div class="card-body items-center text-center">
+        <div class="card-body items-center my-auto text-center">
           <form onKeyDown={handleKeyPress}>
             <input
               onChange={handleTask}
