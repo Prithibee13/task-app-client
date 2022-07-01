@@ -7,6 +7,7 @@ import ToDo from './Pages/To-Do/ToDo';
 import TaskList from './Pages/Home/TaskList/TaskList';
 import CompleteLists from './Pages/CompleteList/CompleteLists';
 import Footer from './Pages/Shared/Footer/Footer';
+import Calenders from './Pages/Calenders/Calenders';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         </Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/todo' element={<ToDo></ToDo>}></Route>
-        <Route></Route>
+        <Route path='/calender' element={<Calenders></Calenders>}></Route>
         <Route></Route>
       </Routes>
       <Footer></Footer>

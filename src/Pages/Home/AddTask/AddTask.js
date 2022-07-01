@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+/*  */
 
 const AddTask = () => 
 {
@@ -40,8 +41,10 @@ const AddTask = () =>
   
   return (
     <div className="container p-16 ">
-      <div class="card w-96 p-10 shadow-xl mx-auto">
+    <article className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="card w-96 p-10 shadow-xl mx-auto">
         <h2>Add your New Task</h2>
+        
         <div class="card-body items-center text-center">
           <form onKeyDown={handleKeyPress}>
             <input
@@ -50,11 +53,17 @@ const AddTask = () =>
               type="text"
               name="task"
               placeholder="Type here"
-              class="input input-bordered w-full max-w-xs"
+              class="input input-bordered w-full mx-auto max-w-xs"
             />
           </form>
         </div>
       </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGFza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+      </div>    
+    </article>
+      
     </div>
   );
 };

@@ -56,6 +56,7 @@ const List = (props) =>
           Edit
         </button>
       </td>
+      
     </tr>
   );
 };

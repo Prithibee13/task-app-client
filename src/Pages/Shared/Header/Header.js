@@ -68,13 +68,11 @@ const Header = () => {
               <Link to='/todo'>To-Do</Link>
             </li>
             <li>
-              <Link to='/'>Calender</Link>
+              <Link to='/calender'>Calender</Link>
             </li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Get started</a>
-        </div>
+       
       </div>
     </div>
   );
