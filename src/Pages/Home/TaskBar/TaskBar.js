@@ -1,4 +1,5 @@
 import React from "react";
+import TaskList from "../TaskList/TaskList";
 
 const TaskBar = () => {
   return (
@@ -36,7 +37,7 @@ const TaskBar = () => {
               </ul>
             </div>
           </div>
-          Content
+          <TaskList></TaskList>
         </div>
         <div class="drawer-side">
           <label for="my-drawer-3" class="drawer-overlay"></label>
