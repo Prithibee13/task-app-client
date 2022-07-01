@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import TaskList from "../TaskList/TaskList";
 
 const TaskBar = () => {
@@ -25,28 +26,28 @@ const TaskBar = () => {
                 </svg>
               </label>
             </div>
-            <div class="flex-1 px-2 mx-2">Navbar Title</div>
+            <div class="flex-1 px-2 mx-2">Task Bar</div>
             <div class="flex-none hidden lg:block">
               <ul class="menu menu-horizontal">
                 <li>
-                  <a>Navbar Item 1</a>
+                  <Link to='taskList'>Tasks</Link>
                 </li>
                 <li>
-                  <a>Navbar Item 2</a>
+                  <Link to='complete'>Complete Tasks</Link>
                 </li>
               </ul>
             </div>
           </div>
-          <TaskList></TaskList>
+          <Outlet></Outlet>
         </div>
         <div class="drawer-side">
           <label for="my-drawer-3" class="drawer-overlay"></label>
           <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
             <li>
-              <a>Sidebar Item 1</a>
+              <Link to='taskList'>Tasks</Link>
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <Link to='complete'>Complete Task</Link>
             </li>
           </ul>
         </div>
